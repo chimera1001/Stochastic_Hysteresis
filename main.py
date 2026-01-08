@@ -197,8 +197,8 @@ def objective_ga(params):
 # ])
 
 ga_config = {
-    'max_num_iteration': 40,
-    'population_size': 60,
+    'max_num_iteration': 30,
+    'population_size': 50,
     'mutation_probability': 0.1,
     'elit_ratio': 0.02,
     'crossover_probability': 0.5,
@@ -232,10 +232,10 @@ print(f"sigma = {sigma_opt:.4f}")
 print(f"omega = {omega_opt:.4f}")
 print(f"tau = {tau_opt:.4f}")
 print(f"Rc = {Rc_opt:.4f} nm")
-print(f"H0 = {H0_opt:.4f} kOe")
-print(f"Ms = {Ms_opt:.4f} emu/g")
-print(f"Numerical mean R = {mean_r_num:.4f} nm")
-print(f"Numerical mean H = {mean_h_num:.4f} kOe")
+# print(f"H0 = {H0_opt:.4f} kOe")
+# print(f"Ms = {Ms_opt:.4f} emu/g")
+# print(f"Numerical mean R = {mean_r_num:.4f} nm")
+# print(f"Numerical mean H = {mean_h_num:.4f} kOe")
 
 plt.figure(figsize=(8, 6))
 plt.plot(H_empirical, B_empirical, 'o', label='Empirical Hysteresis', color='black')
